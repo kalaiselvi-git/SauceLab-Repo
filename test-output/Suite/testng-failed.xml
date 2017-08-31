@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="FirstTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="20.0"/>
+    <parameter name="platform" value="MAC"/>
+    <classes>
+      <class name="Sauce.SauceLab">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testsimple"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Sauce.SauceLab -->
+    </classes>
+  </test> <!-- FirstTest(failed) -->
+  <test name="ThirdTest(failed)" parallel="tests">
+    <parameter name="browser" value="safari"/>
+    <parameter name="version" value="6.0"/>
+    <parameter name="platform" value="MAC"/>
+    <classes>
+      <class name="Sauce.SauceLab">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testsimple"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Sauce.SauceLab -->
+    </classes>
+  </test> <!-- ThirdTest(failed) -->
+  <test name="SecondTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="26.0"/>
+    <parameter name="platform" value="WINDOWS"/>
+    <classes>
+      <class name="Sauce.SauceLab">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testsimple"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Sauce.SauceLab -->
+    </classes>
+  </test> <!-- SecondTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

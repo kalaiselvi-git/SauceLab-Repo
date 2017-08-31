@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="stack.ParallelTestUsingBrowserStack">
+        <methods>
+          <include name="setUp"/>
+          <include name="testsimple"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- stack.ParallelTestUsingBrowserStack -->
+      <class name="GridPack.Grid">
+        <methods>
+          <include name="testcalc"/>
+          <include name="calculatePercent"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- GridPack.Grid -->
+      <class name="Sauce.SauceLab">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testsimple"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Sauce.SauceLab -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
