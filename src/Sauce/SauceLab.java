@@ -66,6 +66,7 @@ public class SauceLab
 			if(result.equals("10"))
 			{
 				System.out.println("Test Case is Passed");
+				system.out.println("Test Case is Passed");
 				
 			}
 			else
