@@ -1,4 +1,5 @@
 pipeline
 {
 echo "print"
+  echo " "
 }
